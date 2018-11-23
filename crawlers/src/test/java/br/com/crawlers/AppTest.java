@@ -1,7 +1,5 @@
 package br.com.crawlers;
 
-import static org.junit.Assert.assertTrue;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Node;
@@ -11,38 +9,53 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URLDecoder;
+import java.util.LinkedList;
 import java.util.List;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
+public class AppTest {
     File input = null;
     Document doc = null;
+    static final String ID_SITE_TABLE = "#siteTable";
 
     @Before
     public void beforeTest() throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
-
-        //input = new File(classLoader.getResource("Cats.html").getFile());
-        //doc = Jsoup.parse(input, "UTF-8", "");
-        doc = Jsoup.connect("https://old.reddit.com/r/cats/").get();
+        String url = URLDecoder.decode(classLoader.getResource("Cats.html").getFile(), "UTF-8");
+        input = new File(url);
+        doc = Jsoup.parse(input, "UTF-8", "");
+        //doc = Jsoup.connect("https://old.reddit.com/r/cats/").get();
     }
 
     @Test
     public void extractElements() {
         //Obter elementos com base no documento e na consulta
-        Elements elementos = Crawler.extractElements(doc, "#siteTable");
+        Elements elementos = Crawler.extractElements(doc, ID_SITE_TABLE);
         assert elementos.size() > 0;
     }
 
     @Test
     public void extractNodes() {
         //Obter nodes com base em uma área específica do documento, ou seja, com base no elemento
-        Elements elementos = Crawler.extractElements(doc, "#siteTable");
+        Elements elementos = Crawler.extractElements(doc, ID_SITE_TABLE);
         List<Node> nodes = Crawler.extractNodes(elementos.get(0));
-        assert nodes.size() > 0;
+        assert (nodes.size() > 0);
+    }
+
+    @Test
+    public void getThreadsList() throws IOException {
+        Crawler c = new Crawler();
+        long quant = 5000;
+        long quantidadeThreads = 2;
+        LinkedList<Thread> threadsList = c.getThreadsList(doc, "https://old.reddit.com", quantidadeThreads, "cats");
+        assertTrue(String.format("%1$s == %2$s", threadsList.size(), quantidadeThreads), threadsList.size() == quantidadeThreads);
+        threadsList.forEach(e -> assertTrue(String.format("%1$s >= %2$s", e.getVotes(), quant),e.getVotes() >= quant));
+
     }
 
 }
