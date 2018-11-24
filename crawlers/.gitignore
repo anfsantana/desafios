@@ -29,3 +29,5 @@ target/generated-test-sources/
 target/maven-archiver/
 target/maven-status/
 target/surefire-reports/
+src/test/files/
+src/main/files

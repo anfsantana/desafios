@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67312eae-d9bd-45f2-b04e-678918366f21" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/crawlers/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/crawlers/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/crawlers/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/crawlers/Thread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/crawlers/entity/ThreadEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Cats.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Cats.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,31 +29,34 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="26" />
-          <entry key="gitignore" value="4" />
-          <entry key="java" value="1677" />
+          <entry key="gitignore" value="7" />
+          <entry key="java" value="4297" />
           <entry key="xml" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1677" />
-          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="JAVA" value="4297" />
+          <entry key="PLAIN_TEXT" value="33" />
           <entry key="XML" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="2" />
-          <entry key="html" value="1" />
-          <entry key="java" value="9" />
+          <entry key="class" value="8" />
+          <entry key="gitignore" value="3" />
+          <entry key="html" value="2" />
+          <entry key="java" value="13" />
+          <entry key="txt" value="2" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="9" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="CLASS" value="8" />
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="13" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -61,10 +65,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+            <state relative-caret-position="55">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-551">
+              <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,29 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/Cats.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="273" selection-start-line="2" selection-start-column="273" selection-end-line="2" selection-end-column="273" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="64" column="27" lean-forward="true" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="58" column="140" selection-start-line="58" selection-start-column="140" selection-end-line="58" selection-end-column="140" />
+            <state relative-caret-position="193">
+              <caret line="167" column="52" selection-start-line="167" selection-start-column="52" selection-end-line="167" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#8766#8767#0" expanded="true" />
@@ -109,13 +108,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="124">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#220#221#0" expanded="true" />
                 <element signature="e#259#260#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="99" column="88" selection-start-line="99" selection-start-column="88" selection-end-line="99" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/files/123456.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -130,19 +156,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="122" column="17" lean-forward="true" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            <state relative-caret-position="112">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -153,12 +170,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>crw</find>
+      <find>next-button</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,12 +188,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/Thread.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/Crawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/model/Crawler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/App.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Cats.html" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java" />
       </list>
     </option>
@@ -236,58 +259,14 @@
               <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
               <item name="crawlers" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
               <item name="crawlers" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
@@ -303,13 +282,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
@@ -322,6 +294,19 @@
       </pane>
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="br.com.crawlers.model" />
+      <recent name="br.com.crawlers.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -343,63 +328,99 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerControllerTest.extractParamsWithSpaceBetweenWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crawlers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.crawlers.entity.*" />
+          <option name="PATTERN" value="br.com.crawlers.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.crawlers" />
-      <option name="MAIN_CLASS_NAME" value="br.com.crawlers.AppTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.extractElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crawlers" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.crawlers.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.crawlers" />
-      <option name="MAIN_CLASS_NAME" value="br.com.crawlers.AppTest" />
-      <option name="METHOD_NAME" value="extractElements" />
+      <option name="PACKAGE_NAME" value="br.com.crawlers.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.crawlers.controller.CrawlerControllerTest" />
+      <option name="METHOD_NAME" value="extractParamsWithSpaceBetweenWords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.writeUsingUrl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerControllerTest.write" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crawlers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.crawlers.entity.*" />
+          <option name="PATTERN" value="br.com.crawlers.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.crawlers.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.crawlers.controller.CrawlerControllerTest" />
+      <option name="METHOD_NAME" value="write" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrawlerModelTest.getThreadsList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawlers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.crawlers.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.crawlers.model" />
+      <option name="MAIN_CLASS_NAME" value="br.com.crawlers.model.CrawlerModelTest" />
+      <option name="METHOD_NAME" value="getThreadsList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrawlerModelTest.getThreadsListWithoutThreadsLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawlers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.crawlers.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.crawlers.model" />
+      <option name="MAIN_CLASS_NAME" value="br.com.crawlers.model.CrawlerModelTest" />
+      <option name="METHOD_NAME" value="getThreadsListWithoutThreadsLimit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.crawlers in crawlers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawlers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.crawlers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.crawlers" />
-      <option name="MAIN_CLASS_NAME" value="br.com.crawlers.AppTest" />
-      <option name="METHOD_NAME" value="writeUsingUrl" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Launch" />
-      <item itemvalue="JUnit.AppTest" />
-      <item itemvalue="JUnit.AppTest.extractElements" />
-      <item itemvalue="JUnit.AppTest.writeUsingUrl" />
+      <item itemvalue="JUnit.CrawlerControllerTest.extractParamsWithSpaceBetweenWords" />
+      <item itemvalue="JUnit.CrawlerModelTest.getThreadsList" />
+      <item itemvalue="JUnit.CrawlerModelTest.getThreadsListWithoutThreadsLimit" />
+      <item itemvalue="JUnit.CrawlerControllerTest.write" />
+      <item itemvalue="JUnit.br.com.crawlers in crawlers" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.writeUsingUrl" />
-        <item itemvalue="JUnit.AppTest.extractElements" />
+        <item itemvalue="JUnit.br.com.crawlers in crawlers" />
+        <item itemvalue="JUnit.CrawlerControllerTest.write" />
+        <item itemvalue="JUnit.CrawlerModelTest.getThreadsListWithoutThreadsLimit" />
+        <item itemvalue="JUnit.CrawlerModelTest.getThreadsList" />
+        <item itemvalue="JUnit.CrawlerControllerTest.extractParamsWithSpaceBetweenWords" />
       </list>
     </recent_temporary>
   </component>
@@ -417,57 +438,57 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_writeUsingUrl - 2018.11.23 at 19h 06m 35s.xml">
-      <configuration name="AppTest.writeUsingUrl" configurationId="JUnit" />
+    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 31m 44s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_writeUsingUrl - 2018.11.23 at 19h 08m 43s.xml">
-      <configuration name="AppTest.writeUsingUrl" configurationId="JUnit" />
+    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 33m 14s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2018.11.23 at 19h 25m 38s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 34m 03s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2018.11.23 at 19h 51m 09s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 36m 03s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2018.11.23 at 20h 02m 42s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 36m 18s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2018.11.23 at 20h 05m 45s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 51m 39s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2018.11.23 at 20h 06m 22s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="br_com_crawlers_in_crawlers - 2018.11.24 at 17h 52m 05s.xml">
+      <configuration name="br.com.crawlers in crawlers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2018.11.23 at 20h 25m 54s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="br_com_crawlers_in_crawlers - 2018.11.24 at 17h 56m 29s.xml">
+      <configuration name="br.com.crawlers in crawlers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2018.11.23 at 21h 19m 29s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="br_com_crawlers_in_crawlers - 2018.11.24 at 17h 56m 41s.xml">
+      <configuration name="br.com.crawlers in crawlers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest - 2018.11.24 at 10h 37m 39s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="br_com_crawlers_in_crawlers - 2018.11.24 at 18h 05m 29s.xml">
+      <configuration name="br.com.crawlers in crawlers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31013617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4969743" visible="true" weight="0.29180327" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43278688" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48940998" weight="0.49344262" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49319214" weight="0.43278688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49621785" weight="0.39508197" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5030257" side_tool="true" visible="true" weight="0.29180327" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.49836066" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.494705" visible="true" weight="0.39508197" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.505295" side_tool="true" visible="true" weight="0.39508197" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49848714" weight="0.24918033" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -507,24 +528,48 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java</url>
+          <line>66</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java</url>
-          <line>38</line>
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java</url>
+          <line>61</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="s.length()" />
-        <watch expression="threadsList.get(0).threadLink" />
-        <watch expression="c" />
+        <watch expression="Files.exists(Paths.get(&quot;/src/test/files/&quot; + chatId + &quot;.txt&quot;))" />
       </configuration>
     </watches-manager>
   </component>
@@ -536,46 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Cats.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="273" selection-start-line="2" selection-start-column="273" selection-end-line="2" selection-end-column="273" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="122" column="17" lean-forward="true" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-          </folding>
+          <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -588,22 +597,111 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="112">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" selection-start-line="23" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="489" selection-start-line="489" selection-end-line="489" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar!/org/jsoup/helper/StringUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Cats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="58" column="177279" selection-start-line="58" selection-start-column="177279" selection-end-line="58" selection-end-column="177279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/files/123456.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="64" column="27" lean-forward="true" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+        <state relative-caret-position="55">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="99" column="88" selection-start-line="99" selection-start-column="88" selection-end-line="99" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="58" column="140" selection-start-line="58" selection-start-column="140" selection-end-line="58" selection-end-column="140" />
+        <state relative-caret-position="193">
+          <caret line="167" column="52" selection-start-line="167" selection-start-column="52" selection-end-line="167" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#8766#8767#0" expanded="true" />

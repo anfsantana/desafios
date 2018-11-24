@@ -1,7 +1,6 @@
-package br.com.crawlers;
+package br.com.crawlers.model;
 
 import br.com.crawlers.entity.ThreadEntity;
-import br.com.crawlers.model.CrawlerModel;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Node;
@@ -15,12 +14,9 @@ import java.net.URLDecoder;
 import java.util.LinkedList;
 import java.util.List;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest {
+public class CrawlerModelTest {
     File input = null;
     Document doc = null;
     static final String ID_SITE_TABLE = "#siteTable";
@@ -56,6 +52,18 @@ public class AppTest {
         long quantidadeThreads = 2;
         LinkedList<ThreadEntity> threadsList = c.getThreadsList(doc, "https://old.reddit.com", quantidadeThreads, "cats");
         assertTrue(String.format("%1$s == %2$s", threadsList.size(), quantidadeThreads), threadsList.size() == quantidadeThreads);
+        threadsList.forEach(e -> assertTrue(String.format("%1$s >= %2$s", e.getVotes(), quant),e.getVotes() >= quant));
+
+    }
+
+    @Test
+    public void getThreadsListWithoutThreadsLimit() throws IOException {
+        CrawlerModel c = new CrawlerModel();
+        long quant = 5000;
+        long quantidadeMaxThreadsHtml = 3;
+        Long quantidadeThreads = null;
+        LinkedList<ThreadEntity> threadsList = c.getThreadsList(doc, "https://old.reddit.com", quantidadeThreads, "cats");
+        assertTrue(String.format("%1$s == %2$s", threadsList.size(), quantidadeMaxThreadsHtml), threadsList.size() == quantidadeMaxThreadsHtml);
         threadsList.forEach(e -> assertTrue(String.format("%1$s >= %2$s", e.getVotes(), quant),e.getVotes() >= quant));
 
     }

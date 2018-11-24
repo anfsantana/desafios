@@ -25,14 +25,14 @@ public class CrawlerModel {
         return doc.select(s);
     }
 
-    public LinkedList<ThreadEntity> getThreadsList(String url, String baseUrl, long quantidadeThreads, String subreddit) throws IOException {
+    public LinkedList<ThreadEntity> getThreadsList(String url, String baseUrl, Long quantidadeThreads, String subreddit) throws IOException {
         Document doc = Jsoup.connect(url).get();
         return this.getThreadsList(doc, baseUrl, quantidadeThreads, subreddit);
     }
 
-    public LinkedList<ThreadEntity> getThreadsList(Document doc, String baseUrl, long quantidadeThreads, String subreddit) throws IOException {
+    public LinkedList<ThreadEntity> getThreadsList(Document doc, String baseUrl, Long quantidadeThreads, String subreddit) throws IOException {
         LinkedList<ThreadEntity> threadsList = new LinkedList<>();
-        if (quantidadeThreads > 0) {
+        if (quantidadeThreads == null || quantidadeThreads > 0 ) {
             Elements elementos = CrawlerModel.extractElements(doc, ID_SITE_TABLE);
             for (Element elemento : elementos) {
                 for (Node node : CrawlerModel.extractNodes(elemento)) {
@@ -42,7 +42,7 @@ public class CrawlerModel {
                     String threadLink = Jsoup.parse(node.toString()).select("div.entry.unvoted > div.top-matter > p.title > a").attr("href");
                     if (!StringUtil.isBlank(stringVote) && StringUtil.isNumeric(stringVote)) {
                         Long votes = Long.parseLong(stringVote);
-                        if (votes >= VOTES_CONDITION && quantidadeThreads > 0) {
+                        if (votes >= VOTES_CONDITION && (quantidadeThreads == null || quantidadeThreads > 0)) {
                             ThreadEntity t = new ThreadEntity(baseUrl);
                             t.setSubreddit(subreddit)
                                     .setVotes(votes)
@@ -50,7 +50,7 @@ public class CrawlerModel {
                                     .setCommentLink(commentLink)
                                     .setThreadLink(threadLink);
                             threadsList.add(t);
-                            quantidadeThreads = quantidadeThreads - 1;
+                            quantidadeThreads = quantidadeThreads != null ? quantidadeThreads - 1 : null;
                         }
                     } else {
                         String subUrl = Jsoup.parse(node.toString()).select("div.nav-buttons > span > span.next-button > a").attr("href");
