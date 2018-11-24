@@ -63,4 +63,23 @@ public class Crawler {
 
         return threadsList;
     }
+
+
+    public void write(String baseUrl, String subreddits, long quantidadeThreads) throws IOException {
+        String[] arraySubreddits = subreddits.split(";");
+        for (String subreddit : arraySubreddits) {
+            System.out.print("\n ======> LISTA DO SUBREDDIT: " + subreddit + " <==============");
+            LinkedList<Thread> threadsList = getThreadsList(baseUrl + "/r/" + subreddit, baseUrl, quantidadeThreads, subreddit);
+            threadsList.forEach(e -> {
+                System.out.print("\n   Subreddit: " + e.getSubreddit());
+                System.out.print("\n   Número de Up Votes: " + e.getVotes());
+                System.out.print("\n   Título da Thread: " + e.getTitle());
+                System.out.print("\n   Link para os comentários da thread: " + e.getCommentLink());
+                System.out.print("\n   Link da thread: " + e.getThreadLink()) ;
+                System.out.print("\n   ==========================================");
+            });
+        }
+
+    }
+
 }
