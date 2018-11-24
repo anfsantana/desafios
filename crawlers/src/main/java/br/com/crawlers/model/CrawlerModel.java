@@ -1,5 +1,6 @@
-package br.com.crawlers;
+package br.com.crawlers.model;
 
+import br.com.crawlers.entity.ThreadEntity;
 import org.jsoup.Jsoup;
 import org.jsoup.helper.StringUtil;
 import org.jsoup.nodes.Document;
@@ -12,7 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class Crawler {
+public class CrawlerModel {
     private static final String ID_SITE_TABLE = "#siteTable";
     private static final long VOTES_CONDITION = 5000;
 
@@ -24,17 +25,17 @@ public class Crawler {
         return doc.select(s);
     }
 
-    public LinkedList<Thread> getThreadsList(String url, String baseUrl, long quantidadeThreads, String subreddit) throws IOException {
+    public LinkedList<ThreadEntity> getThreadsList(String url, String baseUrl, long quantidadeThreads, String subreddit) throws IOException {
         Document doc = Jsoup.connect(url).get();
         return this.getThreadsList(doc, baseUrl, quantidadeThreads, subreddit);
     }
 
-    public LinkedList<Thread> getThreadsList(Document doc, String baseUrl, long quantidadeThreads, String subreddit) throws IOException {
-        LinkedList<Thread> threadsList = new LinkedList<>();
+    public LinkedList<ThreadEntity> getThreadsList(Document doc, String baseUrl, long quantidadeThreads, String subreddit) throws IOException {
+        LinkedList<ThreadEntity> threadsList = new LinkedList<>();
         if (quantidadeThreads > 0) {
-            Elements elementos = Crawler.extractElements(doc, ID_SITE_TABLE);
+            Elements elementos = CrawlerModel.extractElements(doc, ID_SITE_TABLE);
             for (Element elemento : elementos) {
-                for (Node node : Crawler.extractNodes(elemento)) {
+                for (Node node : CrawlerModel.extractNodes(elemento)) {
                     String stringVote = Jsoup.parse(node.toString()).select("div.midcol.unvoted > div.score.unvoted").attr("title");
                     String title = Jsoup.parse(node.toString()).select("div.entry.unvoted > div.top-matter > p.title > a").text();
                     String commentLink = Jsoup.parse(node.toString()).select("div.entry.unvoted > div.top-matter > ul > li.first > a").attr("href");
@@ -42,7 +43,7 @@ public class Crawler {
                     if (!StringUtil.isBlank(stringVote) && StringUtil.isNumeric(stringVote)) {
                         Long votes = Long.parseLong(stringVote);
                         if (votes >= VOTES_CONDITION && quantidadeThreads > 0) {
-                            Thread t = new Thread(baseUrl);
+                            ThreadEntity t = new ThreadEntity(baseUrl);
                             t.setSubreddit(subreddit)
                                     .setVotes(votes)
                                     .setTitle(title)
@@ -62,24 +63,6 @@ public class Crawler {
         }
 
         return threadsList;
-    }
-
-
-    public void write(String baseUrl, String subreddits, long quantidadeThreads) throws IOException {
-        String[] arraySubreddits = subreddits.split(";");
-        for (String subreddit : arraySubreddits) {
-            System.out.print("\n ======> LISTA DO SUBREDDIT: " + subreddit + " <==============");
-            LinkedList<Thread> threadsList = getThreadsList(baseUrl + "/r/" + subreddit, baseUrl, quantidadeThreads, subreddit);
-            threadsList.forEach(e -> {
-                System.out.print("\n   Subreddit: " + e.getSubreddit());
-                System.out.print("\n   Número de Up Votes: " + e.getVotes());
-                System.out.print("\n   Título da Thread: " + e.getTitle());
-                System.out.print("\n   Link para os comentários da thread: " + e.getCommentLink());
-                System.out.print("\n   Link da thread: " + e.getThreadLink()) ;
-                System.out.print("\n   ==========================================");
-            });
-        }
-
     }
 
 }

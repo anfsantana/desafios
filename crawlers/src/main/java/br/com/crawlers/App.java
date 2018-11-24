@@ -1,5 +1,12 @@
 package br.com.crawlers;
 
+import br.com.crawlers.controller.CrawlerController;
+import br.com.crawlers.model.CrawlerModel;
+import br.com.crawlers.service.IDCrawlerBotService;
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -11,18 +18,17 @@ public class App
 {
     public static void main( String[] args )
     {
-        Crawler c = new Crawler();
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Informe os nomes de subreddits separados por ponto-e-vírgula: ");
-        String subreddits = sc.next();
-        System.out.print("Informe a quantidade de threads que você deseja obter por cada subreddit: ");
-        long quantidadeThreads = sc.nextLong();
+
+        ApiContextInitializer.init();
+        TelegramBotsApi botsApi = new TelegramBotsApi();
 
         try {
-            c.write("https://old.reddit.com", subreddits, quantidadeThreads);
-        } catch (IOException e) {
+            botsApi.registerBot(new IDCrawlerBotService());
+        } catch (TelegramApiRequestException e) {
             e.printStackTrace();
         }
+
+        System.out.println("IDCrawlerBot iniciado!");
 
     }
 }

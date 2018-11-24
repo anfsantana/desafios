@@ -1,6 +1,6 @@
-package br.com.crawlers;
+package br.com.crawlers.entity;
 
-public class Thread {
+public class ThreadEntity {
     private String subreddit;
     private Long votes;
     private String title;
@@ -8,7 +8,7 @@ public class Thread {
     private String threadLink;
     private String baseUrl;
 
-    public Thread(String baseUrl){
+    public ThreadEntity(String baseUrl){
         this.baseUrl = baseUrl;
     }
 
@@ -16,7 +16,7 @@ public class Thread {
         return subreddit;
     }
 
-    public Thread setSubreddit(String subreddit) {
+    public ThreadEntity setSubreddit(String subreddit) {
         this.subreddit = subreddit;
         return this;
     }
@@ -25,7 +25,7 @@ public class Thread {
         return votes;
     }
 
-    public Thread setVotes(Long votes) {
+    public ThreadEntity setVotes(Long votes) {
         this.votes = votes;
         return this;
     }
@@ -34,7 +34,7 @@ public class Thread {
         return title;
     }
 
-    public Thread setTitle(String title) {
+    public ThreadEntity setTitle(String title) {
         this.title = title;
         return this;
     }
@@ -43,7 +43,7 @@ public class Thread {
         return commentLink;
     }
 
-    public Thread setCommentLink(String commentLink) {
+    public ThreadEntity setCommentLink(String commentLink) {
         this.commentLink = commentLink;
         return this;
     }
@@ -52,7 +52,7 @@ public class Thread {
         return threadLink;
     }
 
-    public Thread setThreadLink(String threadLink) {
+    public ThreadEntity setThreadLink(String threadLink) {
         this.threadLink = (!threadLink.startsWith("http") ? baseUrl + threadLink : threadLink);
         return this;
     }

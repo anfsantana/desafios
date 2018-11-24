@@ -1,5 +1,7 @@
 package br.com.crawlers;
 
+import br.com.crawlers.entity.ThreadEntity;
+import br.com.crawlers.model.CrawlerModel;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Node;
@@ -35,24 +37,24 @@ public class AppTest {
     @Test
     public void extractElements() {
         //Obter elementos com base no documento e na consulta
-        Elements elementos = Crawler.extractElements(doc, ID_SITE_TABLE);
+        Elements elementos = CrawlerModel.extractElements(doc, ID_SITE_TABLE);
         assert elementos.size() > 0;
     }
 
     @Test
     public void extractNodes() {
         //Obter nodes com base em uma área específica do documento, ou seja, com base no elemento
-        Elements elementos = Crawler.extractElements(doc, ID_SITE_TABLE);
-        List<Node> nodes = Crawler.extractNodes(elementos.get(0));
+        Elements elementos = CrawlerModel.extractElements(doc, ID_SITE_TABLE);
+        List<Node> nodes = CrawlerModel.extractNodes(elementos.get(0));
         assert (nodes.size() > 0);
     }
 
     @Test
     public void getThreadsList() throws IOException {
-        Crawler c = new Crawler();
+        CrawlerModel c = new CrawlerModel();
         long quant = 5000;
         long quantidadeThreads = 2;
-        LinkedList<Thread> threadsList = c.getThreadsList(doc, "https://old.reddit.com", quantidadeThreads, "cats");
+        LinkedList<ThreadEntity> threadsList = c.getThreadsList(doc, "https://old.reddit.com", quantidadeThreads, "cats");
         assertTrue(String.format("%1$s == %2$s", threadsList.size(), quantidadeThreads), threadsList.size() == quantidadeThreads);
         threadsList.forEach(e -> assertTrue(String.format("%1$s >= %2$s", e.getVotes(), quant),e.getVotes() >= quant));
 
