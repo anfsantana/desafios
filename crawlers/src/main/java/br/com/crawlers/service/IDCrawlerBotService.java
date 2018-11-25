@@ -17,9 +17,20 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
-public class IDCrawlerBotService extends TelegramLongPollingBot {
+public class IDCrawlerBotService  extends TelegramLongPollingBot implements Observer {
 
+    CrawlerController c = null;
+    Observable crawler;
+
+    public CrawlerController getCrawlerController() {
+        c = new CrawlerController();
+        this.crawler = c;
+        crawler.addObserver(this);
+        return c;
+    }
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -154,7 +165,7 @@ public class IDCrawlerBotService extends TelegramLongPollingBot {
                     execute(message);
                 }
                 if (ok) {
-                    CrawlerController c = new CrawlerController();
+                    CrawlerController c = this.getCrawlerController();
                     String lista = update.getMessage().getText().toLowerCase().replaceFirst("/nadaprafazer", "").trim();
                     if (!StringUtil.isBlank(lista)) {
                         message = new SendMessage()
@@ -220,5 +231,36 @@ public class IDCrawlerBotService extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
         return "664988127:AAESPjaGdvbsjtGWMB904Hel7Xk-j76uoU0";
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        if (o instanceof CrawlerController) {
+            CrawlerController crawlerController = (CrawlerController) o;
+            SendChatAction sendChatAction = new SendChatAction()
+                    .setChatId(crawlerController.getChatId())
+                    .setAction(ActionType.TYPING);
+            SendMessage message;
+            try {
+                if (crawlerController.isFinished()) {
+                        message = new SendMessage()
+                                .setChatId(crawlerController.getChatId())
+                                .setText("Finalizei ! Veja o arquivo \uD83D\uDE01 ... ");
+                        execute(sendChatAction);
+                        execute(message);
+                        execute(sendChatAction);
+                } else {
+                    message = new SendMessage()
+                            .setChatId(crawlerController.getChatId())
+                            .setText("Estou procurando no subreddit: " + crawlerController.getSubredditAtual() + ", aguarde mais um pouco  \uD83D\uDC68\u200D\uD83D\uDCBB ... ");
+                    execute(sendChatAction);
+                    execute(message);
+                    execute(sendChatAction);
+
+                }
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

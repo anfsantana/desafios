@@ -11,17 +11,21 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Observable;
 import java.util.stream.Collectors;
 
-public class CrawlerController {
+public class CrawlerController extends Observable {
 
-
+    private String subredditAtual;
+    private Long chatId;
+    private boolean finished;
 
     private CrawlerModel getCrawlerModel(){
         return new CrawlerModel();
     }
 
     public void write(String baseUrl, Document doc, String params, Long chatId, String directory) throws IOException {
+        this.setChatId(chatId);
         String url = directory + chatId + ".txt";
         StringBuilder stringBuilder = new StringBuilder();
         Files.deleteIfExists(Paths.get(url));
@@ -36,8 +40,8 @@ public class CrawlerController {
         }
 
         for (String subreddit : listParams) {
-
-            LinkedList<ThreadEntity> threadsList = null;
+            this.setSubredditAtual(subreddit);
+            LinkedList<ThreadEntity> threadsList;
             if(doc == null) {
                 threadsList = crw.getThreadsList(baseUrl + "/r/" + subreddit, baseUrl, quantidadeThreads, subreddit);
             }else{
@@ -58,7 +62,7 @@ public class CrawlerController {
                 stringBuilder.append("\n   ==========================================");
             }
         }
-
+        this.setFinished(true);
         Files.write(Paths.get(url), stringBuilder.toString().getBytes());
     }
 
@@ -80,5 +84,33 @@ public class CrawlerController {
 
         listParams.addLast(quantidadeThreads);
         return listParams;
+    }
+
+    public String getSubredditAtual() {
+        return subredditAtual;
+    }
+
+    public void setSubredditAtual(String subredditAtual) {
+        this.subredditAtual = subredditAtual;
+        setChanged();
+        notifyObservers();
+    }
+
+    public Long getChatId() {
+        return chatId;
+    }
+
+    public void setChatId(Long chatId) {
+        this.chatId = chatId;
+    }
+
+    public boolean isFinished() {
+        return finished;
+    }
+
+    public void setFinished(boolean finished) {
+        this.finished = finished;
+        setChanged();
+        notifyObservers();
     }
 }
