@@ -95,10 +95,9 @@ public class CrawlerControllerTest {
     @Test
     public void write() throws IOException {
         String params = "askreddit;worldnews;cats 2";
-        String directory = "src/test/files/";
         Long chatId = 123456L;
-        crawlerController.write("https://old.reddit.com", doc, params, chatId, directory);
-        assertTrue(Files.exists(Paths.get( directory+ chatId + ".txt")));
+        byte[] file = crawlerController.write("https://old.reddit.com", doc, params, chatId);
+        assertTrue(file.length > 0);
 
     }
 }

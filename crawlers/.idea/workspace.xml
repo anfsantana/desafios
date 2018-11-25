@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67312eae-d9bd-45f2-b04e-678918366f21" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../strings/JavaTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../strings/JavaTemplate/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,28 +20,31 @@
     <session id="-739773985">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Dockerfile" value="13" />
           <entry key="dummy" value="26" />
           <entry key="gitignore" value="7" />
-          <entry key="java" value="4411" />
+          <entry key="java" value="4510" />
           <entry key="md" value="509" />
-          <entry key="xml" value="42" />
+          <entry key="xml" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4411" />
+          <entry key="Dockerfile" value="11" />
+          <entry key="JAVA" value="4510" />
           <entry key="Markdown" value="507" />
-          <entry key="PLAIN_TEXT" value="35" />
-          <entry key="XML" value="42" />
+          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="XML" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,7 +54,7 @@
           <entry key="html" value="2" />
           <entry key="java" value="14" />
           <entry key="md" value="1" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="3" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -55,7 +63,7 @@
           <entry key="CLASS" value="8" />
           <entry key="HTML" value="2" />
           <entry key="JAVA" value="14" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -66,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="884">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,14 +86,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="196" column="30" lean-forward="true" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
+            <state relative-caret-position="139">
+              <caret line="185" column="78" selection-start-line="185" selection-start-column="78" selection-end-line="185" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#12097#12098#0" expanded="true" />
-                <element signature="e#12140#12141#0" expanded="true" />
-                <element signature="e#12189#12190#0" expanded="true" />
-                <element signature="e#12259#12260#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/nio/file/Files.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="2380">
               <caret line="215" selection-start-line="215" selection-end-line="215" />
             </state>
           </provider>
@@ -102,14 +106,18 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-202">
-              <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+            <state relative-caret-position="136">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -117,8 +125,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-648">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="160">
+              <caret line="98" column="43" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -126,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="378">
+              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4073#4074#0" expanded="true" />
@@ -160,6 +168,7 @@
     <findStrings>
       <find>crw</find>
       <find>next-button</find>
+      <find>res</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,7 +179,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/Thread.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/crawlers/AppTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/Crawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/model/Crawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/App.java" />
@@ -178,10 +186,12 @@
         <option value="$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java" />
       </list>
     </option>
   </component>
@@ -266,6 +276,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Angelmário\Documents\Projetos\desafios\crawlers\src\main" />
+      <recent name="C:\Users\Angelmário\Documents\Projetos\desafios\crawlers\src\test" />
+      <recent name="C:\Users\Angelmário\Documents\Projetos\desafios\crawlers\src\test\java" />
+      <recent name="C:\Users\Angelmário\Documents\Projetos\desafios\crawlers\src\main\java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -279,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in crawlers">
+  <component name="RunManager" selected="JUnit.CrawlerControllerTest.write">
     <configuration name="Launch" type="Application" factoryName="Application" singleton="true">
       <option name="MAIN_CLASS_NAME" value="br.com.crawlers.App" />
       <module name="crawlers" />
@@ -367,9 +383,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrawlerControllerTest.write" />
         <item itemvalue="JUnit.All in crawlers" />
         <item itemvalue="JUnit.br.com.crawlers in crawlers" />
-        <item itemvalue="JUnit.CrawlerControllerTest.write" />
         <item itemvalue="JUnit.CrawlerModelTest.getThreadsListWithoutThreadsLimit" />
         <item itemvalue="JUnit.CrawlerModelTest.getThreadsList" />
       </list>
@@ -389,21 +405,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 34m 03s.xml">
-      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 36m 03s.xml">
-      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 36m 18s.xml">
-      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerControllerTest_write - 2018.11.24 at 17h 51m 39s.xml">
-      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="br_com_crawlers_in_crawlers - 2018.11.24 at 17h 52m 05s.xml">
-      <configuration name="br.com.crawlers in crawlers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="br_com_crawlers_in_crawlers - 2018.11.24 at 17h 56m 29s.xml">
       <configuration name="br.com.crawlers in crawlers" configurationId="JUnit" />
     </history-entry>
@@ -419,32 +420,49 @@
     <history-entry file="br_com_crawlers_in_crawlers - 2018.11.24 at 20h 55m 35s.xml">
       <configuration name="br.com.crawlers in crawlers" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_crawlers - 2018.11.25 at 10h 53m 46s.xml">
+      <configuration name="All in crawlers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_crawlers - 2018.11.25 at 10h 54m 38s.xml">
+      <configuration name="All in crawlers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerControllerTest_write - 2018.11.25 at 11h 05m 21s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerControllerTest_write - 2018.11.25 at 11h 06m 05s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerControllerTest_write - 2018.11.25 at 11h 07m 22s.xml">
+      <configuration name="CrawlerControllerTest.write" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3192133" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31770045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48789713" weight="0.49344262" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49319214" weight="0.43278688" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48562783" visible="true" weight="0.49344262" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4924357" weight="0.43278688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49092284" visible="true" weight="0.5868853" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50907713" side_tool="true" visible="true" weight="0.5868853" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49016643" weight="0.68688524" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51437217" side_tool="true" weight="0.49344262" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49848714" weight="0.24918033" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.68288857" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.68078667" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -499,19 +517,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java</url>
-          <line>65</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java</url>
-          <line>100</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java</url>
-          <line>37</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
@@ -520,6 +538,8 @@
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="Files.exists(Paths.get(&quot;/src/test/files/&quot; + chatId + &quot;.txt&quot;))" />
+        <watch expression="URLDecoder.decode(classLoader.getResource(&quot;files/&quot;).getFile(), &quot;UTF-8&quot;)" language="JAVA" />
+        <watch expression="classLoader.getResource(&quot;files/&quot;).getPath()" />
       </configuration>
     </watches-manager>
   </component>
@@ -528,13 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -581,36 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4073#4074#0" expanded="true" />
-            <element signature="e#4102#4103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/files/123456.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/entity/ThreadEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -618,31 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/model/CrawlerModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="196" column="30" lean-forward="true" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#12097#12098#0" expanded="true" />
-            <element signature="e#12140#12141#0" expanded="true" />
-            <element signature="e#12189#12190#0" expanded="true" />
-            <element signature="e#12259#12260#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -654,6 +616,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="275">
@@ -662,18 +629,159 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/files/123456.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/model/CrawlerModelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/service/IDCrawlerBotService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="185" column="78" selection-start-line="185" selection-start-column="78" selection-end-line="185" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/crawlers/controller/CrawlerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4073#4074#0" expanded="true" />
+            <element signature="e#4102#4103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/crawlers/controller/CrawlerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="98" column="43" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>crawlers</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

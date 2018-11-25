@@ -2,6 +2,7 @@ package br.com.crawlers.service;
 
 import br.com.crawlers.controller.CrawlerController;
 import br.com.crawlers.model.CrawlerModel;
+import com.google.common.io.ByteSource;
 import org.jsoup.helper.StringUtil;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ActionType;
@@ -176,12 +177,11 @@ public class IDCrawlerBotService  extends TelegramLongPollingBot implements Obse
                         Thread.sleep(7000);
                         execute(message);
 
-                        String directory = "src/main/files/";
                         String parametros = lista;
-                        c.write("https://old.reddit.com", null, parametros, update.getMessage().getChatId(), directory);
+                        byte[] file = c.write("https://old.reddit.com", null, parametros, update.getMessage().getChatId());
 
                         sendDocument = new SendDocument();
-                        stream = Files.newInputStream(Paths.get( directory+ update.getMessage().getChatId() + ".txt"));
+                        stream = ByteSource.wrap(file).openStream();
                         sendDocument.setDocument("Resultado_busca.txt", stream)
                                 .setChatId(update.getMessage().getChatId());
                         execute(sendChatActionDocument);

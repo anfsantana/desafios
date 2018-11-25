@@ -6,7 +6,6 @@ import org.jsoup.helper.StringUtil;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
-import java.net.URLDecoder;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
@@ -24,11 +23,9 @@ public class CrawlerController extends Observable {
         return new CrawlerModel();
     }
 
-    public void write(String baseUrl, Document doc, String params, Long chatId, String directory) throws IOException {
+    public byte[] write(String baseUrl, Document doc, String params, Long chatId) throws IOException {
         this.setChatId(chatId);
-        String url = directory + chatId + ".txt";
         StringBuilder stringBuilder = new StringBuilder();
-        Files.deleteIfExists(Paths.get(url));
         CrawlerModel crw = getCrawlerModel();
 
         LinkedList<String> listParams = this.extractParams(params);
@@ -63,7 +60,7 @@ public class CrawlerController extends Observable {
             }
         }
         this.setFinished(true);
-        Files.write(Paths.get(url), stringBuilder.toString().getBytes());
+        return stringBuilder.toString().getBytes();
     }
 
     public LinkedList<String> extractParams(String params){
