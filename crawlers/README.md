@@ -1,3 +1,29 @@
+# Descrição dos processos
+
+## Resoluções do desafio
+Para a resolução do desafio, foram utilizados os seguintes passos:
+1. Para a extração das informações do site https://old.reddit.com:
+    1. Leitura da documentação técnica do Jsoup;
+    2. Analise da estrutura do site https://old.reddit.com, para saber como os elementos html e css estão organizados;
+    3. Identificação de  onde estão e quais itens serão extraídos;
+    4. Utilização de seletores para extração das informações e implementação da lógica. 
+2. Para a disponibilização dos resultados via bot do telegram:
+    1. Leitura da documentação técnica de bots do telegram;
+    2. Implementar um pequeno MVP do boot para chegar ao funcionamento;
+    3. Implementar as funcionalidades do bot.
+    
+## Como utilizar a solução
+Para poder utilizar a solução é necessário **executar o projeto java** e em seguida **adicionar o bot no seu telegram**; para isso, utilize os seguintes passos:
+1. Para executar o projeto, será necessário possuir **docker**;
+2. Navegar até o diretório: desafios > crawlers;
+3. Executar os seguintes comandos:
+    1. `docker build -t crawlers:latest .`
+        1. **Observação: Não esquecer o ponto após o latest!**
+    2. `docker run crawlers`
+4. Aguarde até a mensagem "IDCrawlerBot iniciado!" aparecer no terminal.
+5. Para utilizar o bot basta buscar no telegram o seguinte username: `@idwallsubredditbot` e em seguida seguir as instruções fornecidas pelo próprio bot.
+
+
 # Desafio 2: Crawlers
 
 Parte do trabalho na IDwall inclui desenvolver *crawlers/scrapers* para coletar dados de websites.
@@ -29,28 +55,3 @@ Construir um robô que nos envie essa lista via Telegram sempre que receber o co
 ### Dicas
  - Use https://old.reddit.com/
  - Qualquer método para coletar os dados é válido. Caso não saiba por onde começar, procure por JSoup (Java), SeleniumHQ (Java), PhantomJS (Javascript) e Beautiful Soup (Python).
-
-# Descrição dos processos
-
-## Resoluções do desafio
-Para a resolução do desafio, foram utilizados os seguintes passos:
-1. Para a extração das informações do site https://old.reddit.com:
-    1. Leitura da documentação técnica do Jsoup;
-    2. Analise da estrutura do site https://old.reddit.com, para saber como os elementos html e css estão organizados;
-    3. Identificação de  onde estão e quais itens serão extraídos;
-    4. Utilização de seletores para extração das informações e implementação da lógica. 
-2. Para a disponibilização dos resultados via bot do telegram:
-    1. Leitura da documentação técnica de bots do telegram;
-    2. Implementar um pequeno MVP do boot para chegar ao funcionamento;
-    3. Implementar as funcionalidades do bot.
-    
-## Como utilizar a solução
-Para poder utilizar a solução é necessário **executar o projeto java** e em seguida **adicionar o bot no seu telegram**; para isso, utilize os seguintes passos:
-1. Para executar o projeto, será necessário possuir **docker**;
-2. Navegar até o diretório: desafios > crawlers;
-3. Executar os seguintes comandos:
-    1. `docker build -t crawlers:latest .`
-        1. **Observação: Não esquecer o ponto após o latest!**
-    2. `docker run crawlers`
-4. Aguarde até a mensagem "IDCrawlerBot iniciado!" aparecer no terminal.
-5. Para utilizar o bot basta buscar no telegram o seguinte username: `@idwallsubredditbot` e em seguida seguir as instruções fornecidas pelo próprio bot.
