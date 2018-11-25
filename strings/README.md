@@ -1,3 +1,13 @@
+# Descrição dos processos
+
+## Resoluções do desafio
+Para a resolução deste desafio, foi necessário consultar a definição do que seria um texto justificado.
+
+    
+## Como utilizar a solução
+Para esse projeto, não foi utilizado docker, porque os parâmetros estão diretamente no código e por se tratar de uma simples aplicação, que pode ser executada normalmente como um simple código java ou pela IDE.
+
+
 # Desafio 1: Strings
 
 Após ler o coding style do kernel Linux, você descobre a mágica que é
