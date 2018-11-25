@@ -30,9 +30,9 @@ Construir um robô que nos envie essa lista via Telegram sempre que receber o co
  - Use https://old.reddit.com/
  - Qualquer método para coletar os dados é válido. Caso não saiba por onde começar, procure por JSoup (Java), SeleniumHQ (Java), PhantomJS (Javascript) e Beautiful Soup (Python).
 
-#Descrição dos processos
+# Descrição dos processos
 
-##Resoluções do desafio
+## Resoluções do desafio
 Para a resolução do desafio, foram utilizados os seguintes passos:
 1. Para a extração das informações do site https://old.reddit.com:
     1. Leitura da documentação técnica do Jsoup;
@@ -44,7 +44,7 @@ Para a resolução do desafio, foram utilizados os seguintes passos:
     2. Implementar um pequeno MVP do boot para chegar ao funcionamento;
     3. Implementar as funcionalidades do bot.
     
-##Como utilizar a solução
+## Como utilizar a solução
 Para poder utilizar a solução é necessário **executar o projeto java** e em seguida **adicionar o bot no seu telegram**; para isso, utilize os seguintes passos:
 1. Para executar o projeto, será necessário possuir **docker**;
 2. Navegar até o diretório: desafios > crawlers;
