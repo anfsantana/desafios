@@ -50,7 +50,7 @@ Para poder utilizar a solução é necessário **executar o projeto java** e em 
 2. Navegar até o diretório: desafios > crawlers;
 3. Executar os seguintes comandos:
     1. `docker build -t crawlers:latest .`
-        1. Observação: Não esquecer o ponto após o latest!
+        1. **Observação: Não esquecer o ponto após o latest!**
     2. `docker run crawlers`
 4. Aguarde até a mensagem "IDCrawlerBot iniciado!" aparecer no terminal.
 5. Para utilizar o bot basta buscar no telegram o seguinte username: `@idwallsubredditbot` e em seguida seguir as instruções fornecidas pelo próprio bot.
