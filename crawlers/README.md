@@ -4,7 +4,7 @@
 Para a resolução do desafio, foram utilizados os seguintes passos:
 1. Para a extração das informações do site https://old.reddit.com:
     1. Leitura da documentação técnica do Jsoup;
-    2. Analise da estrutura do site https://old.reddit.com, para saber como os elementos html e css estão organizados;
+    2. Análise da estrutura do site https://old.reddit.com, para saber como os elementos html e css estão organizados;
     3. Identificação de  onde estão e quais itens serão extraídos;
     4. Utilização de seletores para extração das informações e implementação da lógica. 
 2. Para a disponibilização dos resultados via bot do telegram:
